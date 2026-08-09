@@ -1,66 +1,207 @@
-# A/B Test for An Improved Recommendation System for An International E-commerce 🛒🆎
+# 🛒 A/B Testing: Recommendation System Analysis
 
-Have received an analytical task from an international online store. My predecessor failed to complete it: they launched an A/B test and then quit (to start a watermelon farm in Brazil). They left only the technical specifications and the test results.
+> A data analysis project evaluating the impact of a recommendation system on customer conversion and user behavior using Python, statistical analysis, and data visualization.
 
-**Technical description**
+---
 
-Test Name: recommender_system_test
+# 📖 Project Overview
 
-Groups: A (control) and B (new payment funnel)
+A/B testing is a key method for measuring the effectiveness of product changes and supporting data-driven decision-making. This project evaluates whether a new recommendation system improved customer engagement and conversion compared to the existing experience.
 
-Start date: 07-12-2020
+Using customer registration, event, and marketing data, the analysis compares user behavior between the control and treatment groups to determine whether the new recommendation system achieved its business objectives.
 
-When they stop receiving new users: 21-12-2020
+---
 
-End date: 01-01-2021
+# 📂 Dataset
 
-Audience: 15% of new users from the EU region
+The analysis was performed using multiple datasets containing:
 
-Purpose of the test: to test changes related to the introduction of an improved recommendation system
+- Marketing campaign information
+- Customer registrations
+- User event history
+- A/B test participant assignments
 
-Expected result: Within 14 days of signing up, users show better conversion on product page views (the event), add items to cart (), and shopping (). At each stage of the funnel, there will be at least a 10% 
-increase.product_pageproduct_cartpurchaseproduct_page → product_cart → purchase
+The datasets included information such as:
 
-Expected Number of Test Participants: 6000
+- User ID
+- Registration Date
+- Region
+- Device
+- Event Date & Time
+- Event Type
+- Purchase Value
+- Test Group
+- Marketing Events
 
-**ab_project_marketing_events_us.csv — the calendar of marketing events for 2020:**
+> **Note:** The original datasets are not included in this repository. The notebook demonstrates the complete analytical workflow, including data preparation, exploratory analysis, statistical testing, and business recommendations.
 
-*name: the name of the marketing even*
+---
 
-*regions: regions where the ad campaign will be held*
+# 🎯 Business Objective
 
-*start_dt: campaign start date*
+The objective of this project was to evaluate whether a new recommendation system improved customer conversion compared to the existing experience.
 
-*finish_dt: campaign end date*
+The expected outcome was a **10% increase** in conversion throughout the customer purchase funnel:
 
-**final_ab_new_users_upd_us.csv — all users who registered in the online store from December 7 to 21, 2020:**
+- Product Page Views
+- Add to Cart
+- Purchases
 
-*user_id*
+---
 
-*first_date: sign-up date*
+# 🛠️ Tools & Technologies
 
-*region*
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- SciPy
+- Jupyter Notebook
+- Exploratory Data Analysis (EDA)
+- Statistical Hypothesis Testing
 
-*device: device used to sign up*
+---
 
-**final_ab_events_upd_us.csv — all new users' events within the period from December 7, 2020 to January 1, 2021:**
+# 🔄 Project Workflow
 
-*user_id*
+### 1. Data Preparation
 
-*event_dt: event date and time*
+- Imported multiple datasets
+- Cleaned missing and duplicate records
+- Merged datasets
+- Validated data quality
+- Prepared data for analysis
 
-*event_name: event type name*
+### 2. Exploratory Data Analysis
 
-*details: additional data on the event (for instance, the order total in USD for purchase events)*
+- User registration trends
+- Marketing campaign review
+- User activity analysis
+- Event distribution
+- Conversion funnel exploration
 
-**final_ab_participants_upd_us.csv  — table containing the test participants:**
+### 3. A/B Test Analysis
 
-*user_id*
+- Compared Control (Group A) and Treatment (Group B)
+- Measured conversion rates across the purchase funnel
+- Performed statistical significance testing
+- Evaluated recommendation system performance
 
-*ab_test: test name*
+### 4. Business Insights
 
-*group: the test group the user belonged to*
+- Summarized key findings
+- Identified limitations
+- Developed data-driven recommendations
 
-**Goals of the Research:**
+---
 
-Assess the impact of the new recommendation system on user behavior, specifically looking for a 10% increase in conversion rates at each stage of the sales funnel (product page views, product card views, and purchases) within 14 days of user signup.
+# 📊 Analysis Performed
+
+- User Distribution Analysis
+- Marketing Event Analysis
+- Conversion Funnel Analysis
+- Conversion Rate Comparison
+- Statistical Hypothesis Testing
+- User Behavior Analysis
+- Recommendation System Evaluation
+
+---
+
+# 💼 Business Value
+
+This project demonstrates how A/B testing can support product decisions by measuring the real impact of new features before full deployment.
+
+The analysis helps stakeholders:
+
+- Validate product improvements
+- Measure customer engagement
+- Improve conversion rates
+- Reduce decision-making risk
+- Support evidence-based product development
+
+---
+
+# 🚀 Skills Demonstrated
+
+### Data Analysis
+
+- Data Cleaning
+- Data Transformation
+- Exploratory Data Analysis (EDA)
+- Data Validation
+
+### Statistical Analysis
+
+- A/B Testing
+- Hypothesis Testing
+- Statistical Significance Testing
+- Conversion Rate Analysis
+
+### Python
+
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- SciPy
+
+### Business Analysis
+
+- KPI Analysis
+- Conversion Funnel Analysis
+- Customer Behavior Analysis
+- Business Reporting
+- Insight Generation
+- Data Storytelling
+
+---
+
+# 📓 Notebook Contents
+
+The notebook includes the complete analytical workflow:
+
+- Data loading and preprocessing
+- Data cleaning and validation
+- Exploratory Data Analysis (EDA)
+- Conversion funnel analysis
+- Statistical hypothesis testing
+- Data visualization
+- Business insights and recommendations
+
+---
+
+# 📁 Repository Structure
+
+```text
+ab-testing-recommendation-system/
+│
+├── README.md
+└── AB_Test_Recommendation_System.ipynb
+```
+
+---
+
+# 📈 Key Findings
+
+- Evaluated the impact of a new recommendation system on customer conversion.
+- Compared user behavior between the control and treatment groups.
+- Measured conversion performance across the customer purchase funnel.
+- Assessed whether observed differences were statistically significant.
+- Provided data-driven recommendations to support product decisions.
+
+---
+
+# 📌 Conclusion
+
+The analysis assessed whether the new recommendation system achieved its goal of improving customer conversion and engagement. The findings demonstrate the importance of validating product changes through controlled experimentation before full-scale implementation.
+
+---
+
+# 👤 Author
+
+**Wael Saleh**
+
+Business Analyst | Data Analyst
+
+Passionate about transforming data into actionable insights through business analysis, experimentation, and data visualization.
